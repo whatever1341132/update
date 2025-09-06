@@ -1,0 +1,31 @@
+{
+  "name": "secure-asset-manager",
+  "version": "1.0.0",
+  "description": "Admin-only secure multi-chain asset collection and routing system",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/app.js",
+    "dev": "ts-node src/app.ts",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build"
+  },
+  "author": "whatever1341132",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "dotenv": "^16.0.0",
+    "ethers": "^6.0.0",
+    "bitcoinjs-lib": "^6.1.0",
+    "@solana/web3.js": "^2.1.0",
+    "tweetnacl": "^1.0.3",
+    "bs58": "^4.0.1",
+    "@tensorflow/tfjs-node": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "eslint": "^8.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
