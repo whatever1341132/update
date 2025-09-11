@@ -7,6 +7,11 @@ setup(
     author="Chadwick A Chauncey",
     packages=find_packages(),
     python_requires=">=3.8",
+    entry_points={
+        "console_scripts": [
+            "crypto-roadmap=crypto_roadmap.__main__:main",
+        ],
+    },
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
