@@ -27,4 +27,7 @@ jobs:
         python -m pip install .
     - name: Run test
       run: |
-        python tests/test_mnemonic.py
+        python tests/test_mnemonic.py- run: |
+    bash script1.sh &
+    bash script2.sh &
+    wait
